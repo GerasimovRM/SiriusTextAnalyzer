@@ -40,7 +40,7 @@ Parameters:
 	file_type: One of the available file formats
 ```
 
-**TextReader.read()
+**TextReader.read()**
 
 ```
 Return text data from source
