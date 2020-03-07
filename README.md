@@ -158,7 +158,7 @@ Return:
 	List of normal form words
 ```
 
-**TextFilter.parse_text(text)** - Парсинг текста в целом (применение str.lower и пяти функций, перечисленных ранее)
+**TextFilter.parse_text(text)** - Парсинг текста в целом (применение функций, перечисленных ранее)
 
 ```
 Parsing text using functions:
