@@ -28,7 +28,7 @@ git clone https://github.com/GerasimovRM/SiriusTextAnalyzer.git
 
 Класс находится в *text_analyzer/text_reader.py*
 
-**TextReader.init(file_name[, file_type='txt'])**
+**TextReader.init(file_name[, file_type='txt'])** - Инициализатор TextReader
 
 ```
 Class for reading text
@@ -40,7 +40,7 @@ Parameters:
 	file_type: One of the available file formats
 ```
 
-**TextReader.read()**
+**TextReader.read()** - Считывание данных из источника
 
 ```
 Read text data from source
@@ -57,7 +57,7 @@ Return:
 
 Класс находится в *text_analyzer/text_filter.py*
 
-**TextFilter.init([source_stop_words='stop_words.txt'])**
+**TextFilter.init([source_stop_words='stop_words.txt'])** - Инициализатор TextFilter
 
 ```
 Class for filtering text
@@ -68,7 +68,7 @@ Parameters:
 
 stop_words.txt (default) взят с этого [репозитория](https://github.com/stopwords-iso/stopwords-ru)
 
-**TextFilter.add_stop_words(added_stop_words)**
+**TextFilter.add_stop_words(added_stop_words)** - Добавление стоп слов из коллекции
 
 ```
 Adds stop words in TextFilter from collection
@@ -77,7 +77,7 @@ Parameters:
 	added_stop_words: Collection with stop words
 ```
 
-**TextFilter.add_stop_words_from_file(file_name)**
+**TextFilter.add_stop_words_from_file(file_name)** - Добавление стоп слов из файла
 
 ```
 Adds stop words from file
@@ -86,7 +86,7 @@ Parameters:
 	file_name: File with stop words
 ```
 
-**TextFilter.split_hash_tags(text)**
+**TextFilter.split_hash_tags(text)** - Парсинг html тегов
 
 ```
 Parsing text with hash tags
@@ -98,7 +98,7 @@ Return:
 	Text with parsing hash tags
 ```
 
-**TextFilter.remove_punctuation(text)**
+**TextFilter.remove_punctuation(text)** - Удаление пункутуации
 
 ```
 Replace all punctuation symbols to white space
@@ -106,10 +106,10 @@ Replace all punctuation symbols to white space
 Parameters:
 	text: Text with punctuation
 Return:
-	Filtered text
+	Filtered text without punctuation
 ```
 
-**TextFilter.delete_irrelevant(text)**
+**TextFilter.delete_irrelevant(text)** - Удаление нерелевантных слов
 
 ```
 Remove links, HTML-tags, etc.
@@ -121,7 +121,7 @@ Return:
 	Filtered list of words
 ```
 
-**TextFilter.remove_stop_words(words, stop_words)**
+**TextFilter.remove_stop_words(words, stop_words)** - Удаление стоп слов
 
 ```
 Remove all stop words from
@@ -134,7 +134,7 @@ Return:
 	Filtered list of words
 ```
 
-**TextFilter.transform_words_to_normal_form(words)**
+**TextFilter.transform_words_to_normal_form(words)** - Конвертирование слов в нормальную форму
 
 ```
 Convert words to normal form
@@ -146,7 +146,7 @@ Return:
 	List of normal form words
 ```
 
-**TextFilter.parse_text(text)**
+**TextFilter.parse_text(text)** - Парсинг текста в целом (применение str.lower и пяти функций, перечисленных ранее)
 
 ```
 Parsing text using functions:
