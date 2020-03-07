@@ -30,22 +30,26 @@ git clone https://github.com/GerasimovRM/SiriusTextAnalyzer.git
 
 **TextReader.__init__** - инициализатор TextReader
 
-"""
+```
 	Class for reading text\n
 
-	Available file formats: txt (default), json', csv\n
+	Available file formats: 
+			txt (default)
+			json
+			csv\n
 
-	:param file_name: File with text data
-	:param file_type: One of the available file formats
-"""
+	Parameters:
+			file_name: File with text data
+			file_type: One of the available file formats
+```
 
 ### And coding style tests
 
 Explain what these tests test and why
 
-```
+
 Give an example
-```
+
 
 
 ## Библиотеки
