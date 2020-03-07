@@ -104,10 +104,10 @@ Return:
 Convert all symbols to lower case
 
 Parameters:
-  text: Source text
+	text: Source text
 	
 Return:
-  Converted lowercase text
+	Converted lowercase text
 ```
 
 **TextFilter.remove_punctuation(text)** - Удаление пункутуации
