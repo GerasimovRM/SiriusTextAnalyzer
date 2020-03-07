@@ -86,7 +86,7 @@ Parameters:
 	file_name: File with stop words
 ```
 
-**TextFilter.split_hash_tags(text)** - Парсинг html тегов
+**TextFilter.split_hash_tags(text)** - Парсинг хэш тегов
 
 ```
 Parsing text with hash tags
