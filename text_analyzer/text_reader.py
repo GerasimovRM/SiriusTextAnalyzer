@@ -7,9 +7,9 @@ class TextReader:
 
     def __init__(self, file_name: str, file_type: str = 'txt'):
         """
-        Class for reading text\n
+        Class for reading text
 
-        Available file formats: txt (default), json', csv\n
+        Available file formats: txt (default), json, csv
 
         :param file_name: File with text data
         :param file_type: One of the available file formats
