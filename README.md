@@ -1,37 +1,28 @@
 # SiriusTextAnalyzer
 
-Программа для участия в проекте образовательного центра «Сириус»: «Большие данные и машинное обучение в когнитивных и социальных науках»
+Программа предобработки текстовых данных для участия в проекте образовательного центра «Сириус»: «Большие данные и машинное обучение в когнитивных и социальных науках»
 
 ## Начало
 
-Эти инструкции предоставят вам информации о возможностях проекта
+Следующие инструкции предоставят вам информации о возможностях проекта
 
 
-```
-Give examples
-```
+### Установка
 
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+Склонируйте проект с репозитория для дальнейшего использования или скачайте его .zip файлом
 
 ```
-Give the example
+git clone https://github.com/GerasimovRM/SiriusTextAnalyzer.git
 ```
 
-And repeat
 
-```
-until finished
-```
+## Описание классов
 
-End with an example of getting some data out of the system or using it for a little demo
+Проект содержит два основных класса:
 
-## Running the tests
+* **TextReader** - класс для считывания данных в форматах txt, json, csv
+* **TextFilter** - класс для фильтрации данных по критериям из задания
 
-Explain how to run the automated tests for this system
 
 ### Break down into end to end tests
 
