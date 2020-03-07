@@ -28,21 +28,19 @@ git clone https://github.com/GerasimovRM/SiriusTextAnalyzer.git
 
 Класс находится в *text_analyzer/text_reader.py*
 
-**TextReader.__init__** - инициализатор TextReader
+**TextReader.init(file_name[, file_type='txt'])** - инициализатор TextReader
 
 ```
-	Class for reading text\n
+Class for reading text
 
-	Available file formats: 
-			txt (default)
-			json
-			csv\n
+Available file formats:txt (default), json, csv
 
-	Parameters:
-			file_name: File with text data
-			file_type: One of the available file formats
+Parameters:
+	file_name: File with text data
+	file_type: One of the available file formats
 ```
 
+**TextReader.read
 ### And coding style tests
 
 Explain what these tests test and why
