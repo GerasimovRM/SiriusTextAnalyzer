@@ -1,0 +1,17 @@
+{
+  "name": "SiriusTextAnalyzer",
+  "description": "test an aabb against other aabbs",
+  "version": "1.0",
+  "repository": {
+    "url": "https://github.com/GerasimovRM/SiriusTextAnalyzer"
+  },
+  "main": "app.py",
+  "scripts": {
+    "test": "tape /app.py"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tape": "*"
+  },
+	"license": "MIT"
+}
