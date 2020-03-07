@@ -29,6 +29,7 @@ git clone https://github.com/GerasimovRM/SiriusTextAnalyzer.git
 Класс находится в *text_analyzer/text_reader.py*
 
 **TextReader.__init__** - инициализатор TextReader
+
 """
 	Class for reading text\n
 
