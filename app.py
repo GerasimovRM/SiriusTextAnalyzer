@@ -24,7 +24,7 @@ def main():
 
     # вывод алфавитно-частотного словаря, отсортированного по количеству употребления слов, в 'answer.txt'
     with open("answer.txt", 'w') as output_file:
-        for key, value in sorted(dict_res.items(), reverse=True, key=lambda x: x[1]):
+        for key, value in sorted(dict_res.items(), reverse=True, key=lambda x: (x[1], x)):
             print(f"{value}: {key}", file=output_file)
 
 
