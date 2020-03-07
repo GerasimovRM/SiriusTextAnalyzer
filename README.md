@@ -63,8 +63,10 @@ Return:
 Class for filtering text
 
 Parameters:
-	source_stop_words: File with stop words ('stop_words.txt' (default) taken from: [click](https://github.com/stopwords-iso/stopwords-ru))
+	source_stop_words: File with stop words
 ```
+
+stop_words.txt (default) taken from: [click](https://github.com/stopwords-iso/stopwords-ru))
 
 **TextFilter.add_stop_words(added_stop_words)**
 
