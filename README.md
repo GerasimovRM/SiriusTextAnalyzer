@@ -66,7 +66,7 @@ Parameters:
 	source_stop_words: File with stop words
 ```
 
-stop_words.txt (default) taken from: [click](https://github.com/stopwords-iso/stopwords-ru))
+stop_words.txt (default) взят с этого [репозитория](https://github.com/stopwords-iso/stopwords-ru)
 
 **TextFilter.add_stop_words(added_stop_words)**
 
@@ -86,7 +86,67 @@ Parameters:
 	file_name: File with stop words
 ```
 
-**TextFilter.add_stop_words_from_file(file_name)**
+**TextFilter.split_hash_tags(text)**
+
+```
+Parsing text with hash tags
+
+Parameters:
+	text: Text with illegible hash tags
+	
+Return:
+	Text with parsing hash tags
+```
+
+**TextFilter.remove_punctuation(text)**
+
+```
+Replace all punctuation symbols to white space
+
+Parameters:
+	text: Text with punctuation
+Return:
+	Filtered text
+```
+
+**TextFilter.delete_irrelevant(text)**
+
+```
+Remove links, HTML-tags, etc.
+
+Parameters:
+	text: Text to filter
+
+Return:
+	Filtered list of words
+```
+
+**TextFilter.remove_stop_words(words, stop_words)**
+
+```
+Remove all stop words from
+
+Parameters:
+	words: Source list of words
+	stop_words: Unnecessary words
+	
+Return:
+	Filtered list of words
+```
+
+**TextFilter.transform_words_to_normal_form(words)**
+
+```
+Convert words to normal form
+        
+Parameters:
+	Source list of words
+
+Return:
+	List of normal form words
+```
+
+**TextFilter.parse_text(text)**
 
 ```
 Parsing text using functions:
@@ -99,10 +159,10 @@ Parsing text using functions:
 
 Parameters:
 	text: Text to parse
+	
 Return:
 	Iterator with parsed words
 ```
-
 
 
 
