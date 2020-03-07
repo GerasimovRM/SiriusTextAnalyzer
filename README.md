@@ -1,49 +1,65 @@
 # SiriusTextAnalyzer
 
-> test an aabb against other aabbs
+Программа для участия в проекте образовательного центра «Сириус»: «Большие данные и машинное обучение в когнитивных и социальных науках»
 
-background details relevant to understanding what this module does
+## Начало
 
-## Usage
+Эти инструкции предоставят вам информации о возможностях проекта
 
-```js
-var siriusTextAnalyzer = require('SiriusTextAnalyzer')
-
-console.log('hello warld')
-```
-
-outputs
 
 ```
-hello warld
+Give examples
 ```
 
-## API
+### Installing
 
-```js
-var siriusTextAnalyzer = require('SiriusTextAnalyzer')
-```
+A step by step series of examples that tell you how to get a development env running
 
-See [api_formatting.md](api_formatting.md) for tips.
-
-## Install
-
-With [npm](https://npmjs.org/) installed, run
+Say what the step will be
 
 ```
-$ npm install SiriusTextAnalyzer
+Give the example
 ```
 
-## Acknowledgments
+And repeat
 
-SiriusTextAnalyzer was inspired by..
+```
+until finished
+```
 
-## See Also
+End with an example of getting some data out of the system or using it for a little demo
 
-- [`noffle/common-readme`](https://github.com/noffle/common-readme)
-- ...
+## Running the tests
 
-## License
+Explain how to run the automated tests for this system
 
-MIT
+### Break down into end to end tests
 
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+### And coding style tests
+
+Explain what these tests test and why
+
+```
+Give an example
+```
+
+
+## Библиотеки
+
+* [re](https://docs.python.org/3/library/re.html) - Модуль для работы с регулярными выражениями
+* [pymorhy2](https://pymorphy2.readthedocs.io/en/latest/) - Модуль для морфологического анализа слов
+
+
+## Авторы
+
+* **Герасимов Роман Михайлович**
+
+## Лицензия
+
+Этот проект лицензирован по лицензии MIT - подробности см. В файле [LICENSE.md](LICENSE.md)
