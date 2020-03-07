@@ -28,25 +28,78 @@ git clone https://github.com/GerasimovRM/SiriusTextAnalyzer.git
 
 Класс находится в *text_analyzer/text_reader.py*
 
-**TextReader.init(file_name[, file_type='txt'])** - инициализатор TextReader
+**TextReader.init(file_name[, file_type='txt'])**
 
 ```
 Class for reading text
 
-Available file formats:txt (default), json, csv
+Available file formats: txt (default), json, csv
 
 Parameters:
 	file_name: File with text data
 	file_type: One of the available file formats
 ```
 
-**TextReader.read
-### And coding style tests
+**TextReader.read()
 
-Explain what these tests test and why
+```
+Return text data from source
+	'txt' -> str
+	'json' -> Dict
+	'csv' -> List[Dict]
 
+Return:
+	File context
+```
 
-Give an example
+### TextFilter и его методы
+
+Класс находится в *text_analyzer/text_filter.py*
+
+**TextFilter.init([source_stop_words='stop_words.txt'])**
+
+```
+Class for filtering text
+
+Parameters:
+	source_stop_words: File with stop words ('stop_words.txt' (default) taken from https://github.com/stopwords-iso/stopwords-ru)
+```
+
+**TextFilter.add_stop_words(added_stop_words)**
+
+```
+Adds stop words in TextFilter from collection
+
+Parameters:
+	added_stop_words: Collection with stop words
+```
+
+**TextFilter.add_stop_words_from_file(file_name)**
+
+```
+Adds stop words from file
+
+Parameters:
+	file_name: File with stop words
+```
+
+**TextFilter.add_stop_words_from_file(file_name)**
+
+```
+Parsing text using functions:
+	str.lower
+	TextFilter.split_hash_tags
+	TextFilter.remove_punctuation
+	TextFilter.delete_irrelevant
+	TextFilter.remove_stop_words
+	TextFilter.transform_words_to_normal_form	
+
+Parameters:
+	text: Text to parse
+Return:
+	Iterator with parsed words
+```
+
 
 
 
