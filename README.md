@@ -92,7 +92,7 @@ Parameters:
 Parsing text with hash tags
 
 Parameters:
-	text: Text with illegible hash tags
+		text: Text with illegible hash tags
 	
 Return:
 	Text with parsing hash tags
@@ -204,8 +204,8 @@ for elem in iter_obj:
 
 # вывод алфавитно-частотного словаря, отсортированного по количеству употребления слов, в 'answer.txt'
 with open("answer.txt", 'w') as output_file:
-	for key, value in sorted(dict_res.items(), reverse=True, key=lambda x: (x[1], x)): 
-		print(f"{key}: {value}", file=output_file)
+	for word, count in sorted(dict_res.items(), key=lambda x: x[1], reverse=True):
+		print(f"{count}: {word}", file=output_file)
 ```
 
 ### Ответ
