@@ -66,7 +66,14 @@ Parameters:
 	source_stop_words: File with stop words
 ```
 
-stop_words.txt (default) взят с этого [репозитория](https://github.com/stopwords-iso/stopwords-ru)
+stop_words.txt (default) взят с этого [репозитория](https://github.com/stopwords-iso/stopwords-ru) без слов: 
+	даром
+	дом
+	деньги
+	жизнь
+	жить
+	ребенок
+	человек
 
 **TextFilter.add_stop_words(added_stop_words)** - Добавление стоп слов из коллекции
 
@@ -211,13 +218,17 @@ with open("answer.txt", 'w') as output_file:
 ### Ответ
 
 ```
+1013: человек
 844: благотворительный
+721: ребёнок
 682: помощь
-677: ребёнок
+657: жизнь
 525: показать
 511: полностью
+487: деньга
 438: добрый
 399: фонд
+385: дом
 384: помочь
 346: рубль
 343: доброта
@@ -242,8 +253,8 @@ with open("answer.txt", 'w') as output_file:
 188: принять
 187: поддержка
 187: иоанн
-183: деньга
 180: история
+179: жить
 178: являться
 173: центр
 173: проявление
@@ -307,10 +318,6 @@ with open("answer.txt", 'w') as output_file:
 123: закон
 123: ссылка
 123: сша
-121: церковь
-119: собственный
-119: желание
-118: сбербанк
 ...
 ```
 
