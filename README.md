@@ -124,6 +124,7 @@ Replace all punctuation symbols to white space
 
 Parameters:
 	text: Text with punctuation
+
 Return:
 	Filtered text without punctuation
 ```
@@ -161,7 +162,7 @@ Return:
 Convert words to normal form
         
 Parameters:
-	Source list of words
+	words: Source list of words
 
 Return:
 	List of normal form words
