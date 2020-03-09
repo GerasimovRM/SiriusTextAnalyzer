@@ -99,7 +99,7 @@ Parameters:
 Parsing text with hash tags
 
 Parameters:
-		text: Text with illegible hash tags
+	text: Text with illegible hash tags
 	
 Return:
 	Text with parsing hash tags
@@ -143,7 +143,9 @@ Return:
 **TextFilter.remove_stop_words(words, stop_words)** - Удаление стоп слов
 
 ```
-Remove all stop words from words
+Remove all stop words (added earlier) from words
+
+Stop words can be add using methods TextFilter.add_stop_words and TextFilter.add_stop_words_from_file
 
 Parameters:
 	words: Source list of words
