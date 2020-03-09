@@ -113,7 +113,9 @@ class TextFilter:
     @status_time
     def remove_stop_words(words: Iterable, stop_words: Iterable) -> Iterable:
         """
-        Remove all stop words from
+        Remove all stop words (added earlier) from words
+
+        Stop words can be add using methods TextFilter.add_stop_words and TextFilter.add_stop_words_from_file
 
         :param words: Source list of words
         :param stop_words: Unnecessary words
