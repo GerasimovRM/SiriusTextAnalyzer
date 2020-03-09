@@ -14,6 +14,6 @@ def status_time(func: Callable) -> Callable:
         start_time = time.clock()
         result = func(*args, **kwargs)
         finish_time = time.clock()
-        print(f"<<< Function {func.__name__} from {func.__name__} is FINISHING in {finish_time - start_time} sec")
+        print(f"<<< Function {func.__name__} from {func.__module__} is FINISHING in {finish_time - start_time} sec")
         return result
     return func_with_status_time
