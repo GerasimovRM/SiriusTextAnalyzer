@@ -49,7 +49,7 @@ class TextFilter:
         text = text.replace('ё', 'е')
         text = self.remove_punctuation(text)
         words = self.delete_irrelevant(text)
-        words = self.remove_stop_words(words, self.stop_words)
+        # words = self.remove_stop_words(words, self.stop_words)
         words = self.transform_words_to_normal_form(words)
         words = self.remove_stop_words(words, self.stop_words)
         return words
